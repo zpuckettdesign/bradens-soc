@@ -18,9 +18,13 @@ export default class Converter extends Component {
     const result = vendors.find(({ name }) => name === this.state.value);
     const math = document.getElementById("cost").value;
     e.preventDefault();
+    const price = (Math.round(((result.markup * math) + Number.EPSILON) * 10) / 10)
+    this.setState({value: price});
+    
 
-    this.setState({value: result.markup * math});
   }
+
+  
 
   render() {
     let vendors = this.props.vendors;
@@ -34,9 +38,9 @@ export default class Converter extends Component {
             ))}
           </select>
         </label>
-        <input id="cost" type="number" />
+        <input id="cost" type="number" placeholder="Cost..." />
         <input type="submit" value="Calculate" />
-        <h4 value={this.state.value} >Sales Price: {this.state.value}</h4>
+        <h5 >Sales Price: ${this.state.value}</h5>
       </form>
     );
   }
