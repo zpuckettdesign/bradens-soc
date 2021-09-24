@@ -21,10 +21,10 @@ Install the packages defined in the package.json:
 npm i
 ```
 
-You can now run the development server:
+You can now run the development server from root folder:
 ```bash
 
-npm start   <--From root folder
+npm start   
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
