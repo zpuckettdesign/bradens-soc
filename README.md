@@ -11,8 +11,9 @@ First, clone the repository to your local computer:
 git clone https://github.com/zpuckettdesign/bradens-soc.git
 
 Then, navigate to the project folder:
-```bash
-cd bradens-soc 
+```
+bash
+cd bradens-soc
 ```
 
 Install the packages defined in the package.json:
@@ -24,8 +25,9 @@ You can now run the development server:
 
 ```bash
 
-npm start from root folder
+npm start 
 ```
+From root folder
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
