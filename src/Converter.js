@@ -38,7 +38,7 @@ export default class Converter extends Component {
             ))}
           </select>
         </label>
-        <input id="cost" type="number" placeholder="Cost..." />
+        <input id="cost" type="number" step="any" placeholder="Cost..." />
         <input type="submit" value="Calculate" />
         <h5 >Sales Price: ${this.state.value}</h5>
       </form>
