@@ -9,10 +9,10 @@
 First, clone the repository to your local computer:
 ```bash
 git clone https://github.com/zpuckettdesign/bradens-soc.git
+```
 
 Then, navigate to the project folder:
-```
-bash
+```bash
 cd bradens-soc
 ```
 
@@ -22,12 +22,10 @@ npm i
 ```
 
 You can now run the development server:
-
 ```bash
 
-npm start 
+npm start   <--From root folder
 ```
-From root folder
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
