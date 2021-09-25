@@ -1,15 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
+import vendors from './Vendors'
 
-export default function ComboBox() {
+export default function Dropdown() {
+  const defaultProps = {
+    options: vendors,
+    getOptionLabel: (option) => option.title,
+  };
+
+  const flatProps = {
+    options: vendors.map((option) => option.title),
+  };
+
+  const [value, setValue] = useState(null);
+
   return (
     <Autocomplete
-      disablePortal
-      id="combo-box"
-      options={vendor}
-      sx={{ width: 300 }}
-      renderInput={(params) => <TextField {...params} label="Vendor" />}
-    />
-  );
+    {...flatProps}
+    id="auto-complete"
+    autoComplete
+    includeInputInList
+    renderInput={(params) => (
+      <TextField {...params} label="autoComplete" variant="standard" />
+    )}
+  />
+  )
+
 }
