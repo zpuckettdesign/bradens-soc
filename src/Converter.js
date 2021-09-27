@@ -18,7 +18,7 @@ export default class Converter extends Component {
     const result = vendors.find(({ name }) => name === this.state.value);
     const math = document.getElementById("cost").value;
     e.preventDefault();
-    const price = (Math.round(((result.markup * math) + Number.EPSILON) * 10) / 10)
+    const price = (Math.round(((result.markup * math) + Number.EPSILON) * 100) / 100)
     this.setState({value: price});
     
 
