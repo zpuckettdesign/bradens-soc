@@ -1,6 +1,7 @@
 body {
-  background-color: #e8e6e6;
+background: #EEEEEE;;
 }
+
 
 .header {
   margin: 0;
@@ -8,40 +9,15 @@ body {
   align-items: center;
   min-height: 20vh;
   text-align: center;
-  background-color: #e8e6e6;
+  background-color: #EEEEEE;
   max-width: 100%;
 }
 
-.converter {
-  background-color: white;
-  padding: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
-  min-width: 60%;
-  display: center;
-  min-height: 50vh;
-  font-family: Arial, sans-serif;
-}
-form {
-  display: inline-flex;
-  font-size: 1.2em;
+.header img {
+  max-width: 75%;
+  display: flex;
+  justify-content: center;
 }
 
 
-select {
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: grey;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-}
 
-input {
-  margin-right: 30px;
-}
-
-h5 {
-
-}

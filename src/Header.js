@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
 export default function Header() {
-    return (
-        <div className="header">
-            <img className="logo" src="../bradenslogo.png" alt="bradenslogo" />
-            <h3 className="title">SPECIAL ORDER CALCULATOR</h3>
-        </div>
-    
-    )
-};
+  return (
+    <div className="row">
+      <div className="col-xs-12 col-sm-6 col-md-8">
+      <img className="logo" src="../bradenslogo.png" alt="bradenslogo" />
+      </div>
+    </div>
+  );
+}
 
 

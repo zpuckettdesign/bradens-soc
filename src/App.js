@@ -1,22 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import Header from "./Header";
-import Converter from "./Converter";
-import vendors from "./Vendors";
-import ComboBox from "./Dropdown";
 
-export default class App extends Component {
-  render() {
-    return (
-      <>
-        <div className="header">
-          <Header />
-        </div>
-        <div className="converter">
-          <Converter vendors={vendors} />
-          <ComboBox />
-        </div>
-      </>
-    );
-  }
+import vendors from "./vendors.json";
+import Select from "./Select";
+
+export default function App() {
+  return (
+    <>
+      <div className="App">
+        <Header />
+        <Select options={vendors} prompt="Vendor" />
+      </div>
+    </>
+  );
 }
