@@ -2,18 +2,12 @@ import React, { useState } from "react";
 
 export default function BasicSelect({ options, name }) {
   const [markup, setMarkup] = useState("");
-  const [vendor, setVendor] = useState("");
   const [cost, setCost] = useState("");
   const [total, setTotal] = useState("");
 
   const handleChangeVendors = (e) => {
     setMarkup(e.target.value);
     console.log(markup);
-  };
-
-  const handleVendors = (e) => {
-    setVendor(e.target.value);
-    console.log(vendor);
   };
 
   const handleChangeCost = (e) => {
