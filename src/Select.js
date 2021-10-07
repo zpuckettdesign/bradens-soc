@@ -59,22 +59,15 @@ export default function BasicSelect({ options, name }) {
           </div>
         </div>
       </form>
+      <br/>
+      <br/>
+      <br/>
+      <div>
+        <h6>Test site for software in development.</h6>
+      </div>
+      <div>
+        <h6>&copy; Bradens Furniture 2021. Created By Zach Puckett. </h6>
+      </div>
     </>
   );
 }
-
-/*   
-<Autocomplete
-      id="vendors"
-      options={options}
-      getOptionLabel={(option) => option}
-      value={markup}
-      style={{ width: 270 }}
-      onChange={handleChangeVendors}
-      renderInput={params => (
-        <TextField {...params} label="Vendor" variant="outlined" 
-        />
-      )}
-
-onChange={handleChangeCost}
-          value={cost} */
