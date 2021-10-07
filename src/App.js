@@ -4,9 +4,6 @@ import Header from "./Header";
 import Select from "./Select";
 import vendors from "./vendors.json";
 
-
-
-
 export default function App() {
   return (
     <>
