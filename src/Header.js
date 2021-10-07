@@ -7,6 +7,7 @@ export default function Header() {
       <div className="col-xs-12 col-sm-6 col-md-8">
       <img className="logo" src="../bradenslogo.png" alt="bradenslogo" />
       </div>
+      <h2>SPECIAL ORDER CALCULATOR</h2>
     </div>
     </div>
   );

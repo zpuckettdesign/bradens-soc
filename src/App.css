@@ -4,30 +4,61 @@ justify-content: center;
 margin: 1em;
 }
 
-#img {
+img {
   width:75%;
   border-radius: .5em;
   padding: 10px;
   display: flex;
+  justify-content: center;
   flex-direction: space-between;
-  margin: 1em;
+
 }
 
-.container {
+h2{
   width:75%;
   border-radius: .5em;
   padding: 10px;
   display: flex;
+  justify-content: center;
   flex-direction: space-between;
-  margin: 1em;
+
 }
-select input button {
+
+select {
   display: flex;
   flex-direction: space-between;
-  
-  padding: 10px;
+  border-radius: 5px;
+  padding: 5px;
   margin-right: 20px;
+  margin-top: 20px;
   
+}
+
+input {
+  display: flex;
+  flex-direction: space-between;
+  border-radius: 5px;
+  padding: 4px;
+  border: solid 1px grey;
+  margin-top: 10px;
+}
+
+button {
+  display: flex;
+  flex-direction: space-between;
+  border-radius: 5px;
+  padding: 4px;
+  border: solid 1px whitesmoke;
+  margin-top: 10px;
+  background-color: lightgray;
+}
+
+.retail {
+  display: flex;
+  flex-direction: space-between;
+  border-radius: 5px;
+  padding: 4px;
+  margin-top: 10px;
 }
 
 form {
@@ -35,5 +66,7 @@ form {
   width:75%;
   border-radius: .5em;
   margin: 1em;
+  align-items: center;
+  justify-content: center;
   filter:drop-shadow(2px 4px 5px grey)
 }
