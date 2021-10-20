@@ -5,7 +5,7 @@ margin: 1em;
 }
 
 img {
-  width:75%;
+  width:30%;
   border-radius: .5em;
   padding: 10px;
   display: flex;
@@ -24,15 +24,19 @@ h4{
 
 }
 
-select {
-  display: flex;
-  flex-direction: space-between;
-  border-radius: 5px;
-  padding: 5px;
-  margin-right: 20px;
-  margin-top: 20px;
-  
+/* Select Wrapper (for befores & afters) */
+
+.custom-select{
+  /* wrapper style */
+  position: relative;
+  display:block;
+  max-width: 400px;
+  min-width: 180px;
+  margin:0 auto;
 }
+
+
+body { margin-top: 80px; }
 
 input {
   display: flex;

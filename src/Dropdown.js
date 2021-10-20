@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import { useState } from 'react'
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
-
-export default function BasicSelect({ options, name }) {
+export default function Dropdown({options, name, prompt}) {
   const [markup, setMarkup] = useState("");
   const [cost, setCost] = useState("");
   const [total, setTotal] = useState("");
@@ -22,33 +26,35 @@ export default function BasicSelect({ options, name }) {
 
     e.preventDefault();
   };
-
-  return (
-    <>
+    
+  
+    return (
+      <>
     <div>
     <img className="logo" src="../bradenslogo.png" alt="bradenslogo" />
     </div>
     <div>
       <h4>Price Calculator</h4>
     </div>
-      <form onSubmit={handleSubmit}>
-        <div className="container">
-          <div className="row row-no-gutters">
-            <div className="col-xs-12 col-sm-6 col-md-8">
-              <div className="select">
-                <select
-                  options={options}
-                  value={name}
-                  onChange={handleChangeVendors}
-                >
-                  {options.map((option) => (
-                    <option key={name} value={option.markup}>
-                      {option.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="cost">
+      <form onChange={handleSubmit}>
+        <Box sx={{ minWidth: 120 }}>
+      <FormControl fullWidth>
+        <InputLabel id="simple-select-label">{prompt}</InputLabel>
+        <Select
+          labelId="select-label"
+          id="select"
+          options={options}
+          value={markup}
+          onChange={handleChangeVendors}
+        >{options.map((option) => (
+          <MenuItem key={name} value={option.markup}>
+            {option.name}
+          </MenuItem>
+        ))}
+        </Select>
+      </FormControl>
+    </Box>
+    <div className="cost">
                 <input
                   type="text"
                   placeholder="Cost"
@@ -62,11 +68,8 @@ export default function BasicSelect({ options, name }) {
               <div className="retail">
                 {total && <div>Retail: {total}</div>}
               </div>
-            </div>
-          </div>
-        </div>
-      </form>
-      <br/>
+    </form>
+    <br/>
       <br/>
       <br/>
       <div>
@@ -76,5 +79,5 @@ export default function BasicSelect({ options, name }) {
         <h6>&copy; Bradens Furniture 2021. Created By Zach Puckett. </h6>
       </div>
     </>
-  );
-}
+    )
+  }
